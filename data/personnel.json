@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Tristan Bond",
+    "role": "Vocals",
+    "years": "2023 - present",
+    "photoUrl": "assets/images/Tristan_New.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Francis Healy",
+    "role": "Lead Guitar",
+    "years": "2023 - present",
+    "photoUrl": "assets/images/Francis.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Savva Belavsky-Levitan",
+    "role": "Drummer",
+    "years": "2023 - present",
+    "photoUrl": "assets/images/Savva.JPG"
+  },
+  {
+    "id": 4,
+    "name": "Maks Sadlon",
+    "role": "Band Adviser",
+    "years": "2024 - present",
+    "photoUrl": "assets/images/Maks.JPG"
+  },
+  {
+    "id": 5,
+    "name": "Sean Farrell",
+    "role": "Rhythm Guitar",
+    "years": "2025 - present",
+    "photoUrl": "assets/images/Sean.JPG"
+  },
+  {
+    "id": 6,
+    "name": "Tobias Maximus",
+    "role": "Bass",
+    "years": "2025 - present",
+    "photoUrl": ""
+  }
+]

@@ -1,0 +1,124 @@
+@font-face {
+    font-family: logo;
+    src: url(Metropolitan.ttf);
+  }
+
+@font-face {
+    font-family: info;
+    src: url(Blacklisted.ttf)
+}
+
+
+.logo {
+    align-items: center;
+    max-height: 1800px;
+}
+
+
+.page {
+    font-family: info;
+    font-size: 30px;
+    text-align: center;
+    font-style: oblique;
+}
+
+a.one:link {color: white;}
+a.one:visited {color: white;}
+a.one:hover {font-size: 150%;}
+
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 0;
+    background-color: black;
+}
+
+.titles {
+    font-family: logo;
+    font-size: 80px;
+    color: black;
+    text-align: center;
+    text-decoration:wavy;
+}
+
+.text {
+    font-family: info;
+    font-size: 15px;
+    color: black;
+    border-style: solid;
+    border-color: red;
+    border-width: 10px;
+    padding: 30px;
+    border-radius: 0px 40px 80px 40px;
+    align-items: center;
+}
+
+.button {
+    background-color: Black;
+    font-family: info;
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.personnel {
+    max-height: 363px;
+    max-width: fit-content;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.div_personnel {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;    
+}
+
+
+
+.text_info {
+    color: black;
+    font-size: 30px;
+    text-align: left;
+}
+
+
+.container {
+    position: relative;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
