@@ -8,6 +8,11 @@
     src: url(Blacklisted.ttf)
 }
 
+@font-face {
+    font-family: history;
+    src: url(THEBOLDFONT-FREEVERSION.otf)
+}
+
 
 .logo {
     align-items: center;
