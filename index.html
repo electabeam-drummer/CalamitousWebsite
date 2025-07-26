@@ -9,7 +9,7 @@
 <body>
     
 
-    <img src="New Calamitous Logo (1).png" class="logo">
+    <img src="assets/images/New Calamitous Logo (1).png" class="logo">
     
     <h3 class="titles">Personnel</h3>
 
@@ -30,11 +30,15 @@
         </select>
         <button class="button" onclick="ticket_display()">Get Tickets</button>
     </div>
-</body>
-<script>
-    alert('This browser uses cookies');
-    function ticket_display() {
-        alert('Your tickets will be sent via email soon')
-    }
-</script>   
-    
+
+
+    <script>
+        // Этот скрипт мы тоже вынесем в main.js на следующем уроке
+        function ticket_display() {
+            alert('Your tickets will be sent via email soon');
+        }
+    </script>  
+    <script src="assets/js/main.js" defer></script>
+</body> 
+
+</html>

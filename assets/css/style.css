@@ -1,16 +1,16 @@
 @font-face {
     font-family: logo;
-    src: url(Metropolitan.ttf);
+    src: url(/assets/fonts/Metropolitan.ttf);
   }
 
 @font-face {
     font-family: info;
-    src: url(Blacklisted.ttf)
+    src: url(/assets/fonts/Blacklisted.ttf)
 }
 
 @font-face {
     font-family: history;
-    src: url(THEBOLDFONT-FREEVERSION.otf)
+    src: url(/assets/fonts/THEBOLDFONT-FREEVERSION.otf)
 }
 
 
