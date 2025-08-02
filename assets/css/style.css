@@ -72,6 +72,7 @@ a.one:hover {
 }
 
 .titles {
+    font-family: logo;
     font-size: 6vw; /* Размер шрифта зависит от ширины экрана */
     max-block-size: 72px; /* Ограничиваем максимальный размер */
     margin-top: 60px;
@@ -86,6 +87,7 @@ a.one:hover {
 }
 
 .text {
+    font-family: history;
     max-width: 800px;  /* Ограничиваем ширину текста */
     margin: 40px auto; /* Центрируем блок */
     line-height: 1.6;  /* Увеличиваем межстрочный интервал */
