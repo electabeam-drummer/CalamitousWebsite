@@ -87,7 +87,7 @@ a.one:hover {
 }
 
 .text {
-    font-family: history;
+    font-family: info;
     max-width: 800px;  /* Ограничиваем ширину текста */
     margin: 40px auto; /* Центрируем блок */
     line-height: 1.6;  /* Увеличиваем межстрочный интервал */
