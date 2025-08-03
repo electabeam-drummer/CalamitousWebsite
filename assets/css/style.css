@@ -35,18 +35,23 @@
     font-family: info;
     font-size: 30px;
     text-align: center;
-    font-style: oblique;
+    font-style: normal;
 }
 
 a.one:link, a.one:visited {
     color: white;
     /* Плавное изменение свойств в течение 0.3 секунды */
     transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
 }
 
 a.one:hover {
     background-color: #ff4500;
+    border-width: 10px;
+    border-radius: 3px;
+    border-top: 15px;
     color: white;
+    text-decoration: none;
 }
 
 .personnel.image {
@@ -91,6 +96,8 @@ a.one:hover {
     max-width: 800px;  /* Ограничиваем ширину текста */
     margin: 40px auto; /* Центрируем блок */
     line-height: 1.6;  /* Увеличиваем межстрочный интервал */
+    max-height: 1000px;
+    font-size:larger;
 }
 
 .button {
