@@ -134,10 +134,11 @@ a.one:hover {
     color: black;
     font-size: 30px;
     text-align: left;
+    font-family: info;
 }
 
 
-/*.container {
+.container {
     position: relative;
   }
   
@@ -166,5 +167,5 @@ a.one:hover {
   
   .container:hover .middle {
     opacity: 1;
-  }/*
+  }
   
