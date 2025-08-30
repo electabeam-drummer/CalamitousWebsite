@@ -82,6 +82,8 @@ a.one:hover {
     max-block-size: 72px; /* Ограничиваем максимальный размер */
     margin-top: 60px;
     margin-bottom: 40px;
+    display: block;
+    position: center;
 }
 
 .div_personnel {
