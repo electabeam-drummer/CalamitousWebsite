@@ -76,7 +76,7 @@ a.one:hover {
     background-color: black;
 }
 
-.titles {
+.personnel {
     font-family: logo;
     font-size: 6vw; /* Размер шрифта зависит от ширины экрана */
     max-block-size: 72px; /* Ограничиваем максимальный размер */
@@ -85,6 +85,17 @@ a.one:hover {
     display: block;
     position: center;
 }
+
+.titles {
+    font-family: logo;
+    font-size: 72px; /* Уменьшили для лучшей читаемости */
+    color: #222222;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-decoration: none; /* Убираем спорное волнистое подчеркивание */
+}
+
 
 .div_personnel {
     display: flex;
@@ -170,4 +181,28 @@ a.one:hover {
   .container:hover .middle {
     opacity: 1;
   }
+
+.slideshow_container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+.active {
+    background-color: #717171
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+    
+}
   
