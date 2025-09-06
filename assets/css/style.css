@@ -150,7 +150,7 @@ a.one:hover {
     font-family: info;
 }
 
-
+/*old css for the personnel
 .container {
     position: relative;
   }
@@ -181,7 +181,9 @@ a.one:hover {
   .container:hover .middle {
     opacity: 1;
   }
+*/
 
+/*this section of css focuses on creating the slideshoy for history.html*/
 .slideshow_container {
     max-width: 1000px;
     position: relative;
@@ -205,4 +207,46 @@ a.one:hover {
 @media only screen and (max-width: 300px) {
     
 }
-  
+
+/* new css code fot personnel */
+
+.personnel-card {
+    position: relative; /* Необходимо для эффекта при наведении */
+    max-width: 300px; /* Ограничим ширину карточки */
+    border-radius: 10px;
+    overflow: hidden; /* Скроет все, что выходит за скругленные углы */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.personnel-card img.personnel {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.personnel-card:hover img.personnel {
+    transform: scale(1.1); /* Эффект приближения при наведении */
+}
+
+.personnel-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-family: info, sans-serif;
+}
+
+.personnel-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.5em;
+}
+
+.personnel-info p {
+    margin: 0;
+    font-size: 1em;
+}
