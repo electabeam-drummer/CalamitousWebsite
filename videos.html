@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descrpition" content="Official Website for Metal Band Calamitous with Shops, Videos, News and Merch">
-    <title>Calamitous Videos Page</title>
+    <title>Videos | Calamitous</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="main-content-wrapper">
-    
-    <h2 class="titles">Concert Videos</h2>
+<body>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GaEpjndE9B8?si=Go1udgY4PRz24yGT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
+    <header include-html="components/navbar.html"></header>
 
+    <main class="main-content-wrapper">
+        <h2 class="titles">Concert Videos</h2>
+        
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GaEpjndE9B8?si=Go1udgY4PRz24yGT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+        <!-- На Уроке 2 мы научимся генерировать этот список видео из data/videos.json -->
+    </main>
 
-
-
-    
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>

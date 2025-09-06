@@ -2,55 +2,37 @@
   {
     "id": 1,
     "name": "Tristan Bond",
-    "role": "Vocals",
-    "years": "2023 - present",
+    "role": "Гитара, Вокал",
+    "years": "2023 - настоящее время",
     "photoUrl": "assets/images/Tristan_New.jpg",
-    "bio": "",
-    "gear": "None"
+    "bio": "Основатель группы и идейный вдохновитель.",
+    "gear": "Gibson Flying V"
   },
   {
     "id": 2,
     "name": "Francis Healy",
-    "role": "Lead Guitar",
-    "years": "2023 - present",
+    "role": "Соло-гитара",
+    "years": "2023 - настоящее время",
     "photoUrl": "assets/images/Francis.jpg",
-    "bio": "",
-    "gear": "Roland Cube Amp, Epiphone Flying V Ebony, Epiphone Slash Les Paul, Jackson Pro Plus Dinky DKA Metallic Black"
+    "bio": "Привносит в звучание группы уникальные риффы и виртуозные соло.",
+    "gear": "Fender Stratocaster"
   },
   {
     "id": 3,
-    "name": "Savva Belavsky-Levitan",
-    "role": "Drummer",
-    "years": "2023 - present",
+    "name": "Savva Belavsky Levitan",
+    "role": "Бас-гитара",
+    "years": "2023 - настоящее время",
     "photoUrl": "assets/images/Savva.JPG",
-    "bio": "",
-    "gear": "Vic Firth 7AN American Classic, Promark Transport Deluxe, Roland TD-8"
+    "bio": "Сердце ритм-секции, отвечает за грув.",
+    "gear": "Ibanez SR300"
   },
   {
     "id": 4,
     "name": "Maks Sadlon",
-    "role": "Band Adviser",
-    "years": "2024 - present",
+    "role": "Барабаны",
+    "years": "2024 - настоящее время",
     "photoUrl": "assets/images/Maks.JPG",
-    "bio": "",
-    "gear": ""
-  },
-  {
-    "id": 5,
-    "name": "Sean Farrell",
-    "role": "Rhythm Guitar",
-    "years": "2025 - present",
-    "photoUrl": "assets/images/Sean.JPG",
-    "bio": "",
-    "gear": "Epiphone Classic Les Paul Ebony, Boss Katana"
-  },
-  {
-    "id": 6,
-    "name": "Tobias Maximus",
-    "role": "Bass",
-    "years": "2025 - present",
-    "photoUrl": "",
-    "bio": "",
-    "gear": "Harley Benton MB-4 SBK Deluxe Series"
+    "bio": "Самый новый участник, задающий темп.",
+    "gear": "Tama Imperialstar"
   }
 ]

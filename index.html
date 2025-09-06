@@ -1,71 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descrpition" content="Official Website for Metal Band Calamitous with Shops, Videos, News and Merch">
-    <title>Calamitous Official Website</title>
+    <meta name="description" content="Официальный сайт рок-группы Calamitous. История, музыка, видео и мерч.">
+    <title>Calamitous | Official Website</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="main-content-wrapper">
-    
+<body>
+
+    <!-- Плейсхолдер для навигации. Скрипт main.js вставит сюда код из components/navbar.html -->
     <header include-html="components/navbar.html"></header>
 
-    <img class="logo" src="assets/images/Logo.png" alt="Calamitous Logo">
-    
-    <section>
+    <main class="main-content-wrapper">
+        <img src="assets/images/New Calamitous Logo (1).png" class="logo" alt="Логотип группы Calamitous">
+        
+        <section>
             <h3 class="titles">Personnel</h3>
+            <!-- Этот блок пока остается статичным. На Уроке 2 мы научимся генерировать его из data/personnel.json -->
             <div class="div_personnel">
                 <div class="container">
-                    <img src="assets/images/Tristan_New.jpg" class="personnel image" alt="Tristan Bond Pic">
+                    <img src="assets/images/Tristan_New.jpg" class="personnel image" alt="Фото Tristan Bond">
                     <div class="middle">
                         <div class="text_info"><b>Tristan Bond</b> (2023 - present)</div>
                     </div>
                 </div>
                 <div class="container">
-                    <img src="assets/images/Francis.jpg" class="personnel image" alt="Francis Healy Pic">
+                    <img src="assets/images/Francis.jpg" class="personnel image" alt="Фото Francis Healy">
                     <div class="middle">
                         <div class="text_info"><b>Francis Healy</b> (2023 - present)</div>
                     </div>
                 </div>
                 <div class="container">
-                    <img src="assets/images/Savva.JPG" class="personnel image" alt="Savva Belavsky Levitan Pic">
+                    <img src="assets/images/Savva.JPG" class="personnel image" alt="Фото Savva Belavsky Levitan">
                     <div class="middle">
                         <div class="text_info"><b>Savva Belavsky Levitan</b> (2023 - present)</div>
                     </div>
                 </div>
                 <div class="container">
-                    <img src="assets/images/Maks.JPG" class="personnel image" alt="Maks Sadlon Pic">
+                    <img src="assets/images/Maks.JPG" class="personnel image" alt="Фото Maks Sadlon">
                     <div class="middle">
                         <div class="text_info"><b>Maks Sadlon</b> (2024 - present)</div>
                     </div>
                 </div>
                 <div class="container">
-                    <img src="assets/images/Sean.JPG" class="personnel image" alt="Sean Farrell Pic">
+                    <img src="assets/images/Sean.JPG" class="personnel image" alt="Фото Sean Farrell">
                     <div class="middle">
                         <div class="text_info"><b>Sean Farrell</b> (2025 - present)</div>
-                    </div>
-                </div>
-                <div class="container">
-                    <img src="assets/images/Tobias.jpg" class="personnel image" alt="Toby Jones Pic">
-                    <div class="middle">
-                        <div class="text_info"><b>Toby Jones (Tobias Maximus)</b> (2025 - present)</div>
                     </div>
                 </div>
             </div>
         </section>
 
-
-
-
+        <section>
+            <h3 class="titles">Tours</h3>
+            <div class="text">
+                <p>Want to see us on tour?</p>
+                <input type="text" placeholder="Enter your name here">
+                <input type="date">
+                <select>
+                    <option value="Dublin">Dublin</option>
+                    <option value="London">London</option>
+                    <option value="New York">New York</option>
+                    <option value="Tokyo">Tokyo</option>
+                    <option value="Moscow">Moscow</option>
+                </select>
+                <button class="button" onclick="ticket_display()">Get Tickets</button>
+            </div>
+        </section>
+    </main>
 
     <script>
         // Этот скрипт мы тоже вынесем в main.js на следующем уроке
         function ticket_display() {
             alert('Your tickets will be sent via email soon');
         }
-    </script>  
+    </script>
     <script src="assets/js/main.js" defer></script>
-</body> 
-
+</body>
 </html>

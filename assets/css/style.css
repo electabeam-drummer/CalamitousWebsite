@@ -1,173 +1,186 @@
+/* --- Шрифты --- */
+/* 
+    Комментарий для студента: Мы выносим загрузку кастомных шрифтов в начало файла.
+    Пути к файлам шрифтов изменены на относительные. 
+    ../ означает "подняться на одну директорию вверх", то есть из /css в /assets.
+*/
 @font-face {
-    font-family: logo;
-    src: url(/assets/fonts/Metropolitan.ttf);
-  }
-
-@font-face {
-    font-family: info;
-    src: url(/assets/fonts/Blacklisted.ttf)
+    font-family: 'logo'; /* Даем шрифту простое и понятное имя */
+    src: url('../fonts/Metropolitan.ttf');
 }
 
 @font-face {
-    font-family: history;
-    src: url(/assets/fonts/THEBOLDFONT-FREEVERSION.otf)
+    font-family: 'info';
+    src: url('../fonts/Blacklisted.ttf');
 }
 
+/* --- Основные стили страницы --- */
+body {
+    margin: 0; /* Убираем отступы по умолчанию, которые добавляет браузер */
+    padding: 0; /* Убираем поля по умолчанию */
+    background-color: #1a1a1a; /* Темный фон для лучшего контраста с контентом */
+    color: #f5f5f5; /* Светлый цвет текста по умолчанию */
+    font-family: Arial, sans-serif; /* Задаем базовый, безопасный шрифт для всего текста */
+}
+
+/* 
+    НОВОЕ: Контейнер-обертка для всего контента.
+    Это ключевой элемент для создания профессионального макета.
+    Он не дает сайту "расползаться" на всю ширину на больших экранах.
+*/
 .main-content-wrapper {
-    max-width: 1200px;  /* Максимальная ширина контента */
-    margin: 0 auto;     /* Магия центрирования */
-    padding: 20px;      /* Внутренние отступы */
-    background-color: white;
-    color: #333;
+    max-width: 1200px; /* Максимальная ширина контента */
+    margin: 0 auto; /* Центрируем контейнер на странице */
+    padding: 20px; /* Добавляем "воздух" по краям */
+    background-color: #ffffff; /* Белый фон для основной части, чтобы текст был читаемым */
+    color: #333; /* Темно-серый цвет текста для основного контента */
 }
 
 
-.logo {
-    display: block;     /* Чтобы margin: auto сработал */
-    width: 90%;         /* 90% от родителя (.main-content-wrapper) */
-    max-width: 600px;   /* НО! Не шире 600px на больших экранах */
-    height: auto;       /* Сохраняем пропорции */
-    margin: 50px auto;  /* Отступы и центрирование */
+/* --- Навигационная панель --- */
+.navbar {
+    display: flex;
+    justify-content: space-evenly; /* Равномерно распределяет элементы по горизонтали */
+    align-items: center; /* Центрирует элементы по вертикали */
+    background-color: black;
+    padding: 15px 0; /* Вертикальные отступы для "воздуха" */
+    position: sticky; /* Делает меню "липким" при прокрутке */
+    top: 0;
+    z-index: 1000; /* Гарантирует, что меню будет поверх другого контента */
 }
-
 
 .page {
-    font-family: info;
-    font-size: 30px;
-    text-align: center;
-    font-style: normal;
+    font-family: 'info', sans-serif;
+    font-size: 28px;
+    margin: 0;
 }
 
 a.one:link, a.one:visited {
     color: white;
-    /* Плавное изменение свойств в течение 0.3 секунды */
-    transition: background-color 0.3s ease, color 0.3s ease;
-    text-decoration: none;
+    text-decoration: none; /* Убираем стандартное подчеркивание */
+    padding: 10px 15px; /* Добавляем кликабельную область */
+    border-radius: 5px; /* Слегка скругляем углы */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавный переход для hover-эффекта */
 }
 
 a.one:hover {
-    background-color: #ff4500;
-    border-width: 10px;
-    border-radius: 3px;
-    border-top: 15px;
+    background-color: #ff4500; /* Яркий оранжевый цвет при наведении */
     color: white;
-    text-decoration: none;
 }
 
-.personnel.image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    backface-visibility: hidden;
-    transition: opacity .5s ease;
+/* --- Логотип --- */
+/*
+    ИСПРАВЛЕНИЕ №1: Управление размером логотипа.
+*/
+.logo {
+    display: block; /* Позволяет использовать margin: auto для центрирования */
+    width: 90%; /* Занимает 90% от ширины родителя */
+    max-width: 600px; /* Но не более 600px */
+    height: auto; /* Высота подстраивается автоматически */
+    margin: 50px auto; /* Центрирование по горизонтали и вертикальные отступы */
 }
 
-.container:hover .image {
-    opacity: 0.1; /* Изменение будет плавным */
-}
-
-
-.navbar {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    margin-top: 0;
-    background-color: black;
-}
-
+/* --- Секции и заголовки --- */
 .titles {
-    font-family: logo;
-    font-size: 6vw; /* Размер шрифта зависит от ширины экрана */
-    max-block-size: 72px; /* Ограничиваем максимальный размер */
+    font-family: 'logo', serif;
+    font-size: 72px; /* Уменьшили для лучшей читаемости */
+    color: #222222;
+    text-align: center;
     margin-top: 60px;
     margin-bottom: 40px;
-    display: block;
-    position: center;
+    text-decoration: none; /* Убираем спорное волнистое подчеркивание */
 }
 
+/* --- Секция с участниками (Personnel) --- */
 .div_personnel {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px; /* Расстояние между flex-элементами */
+    justify-content: center; /* Центрируем группу карточек */
+    flex-wrap: wrap; /* Позволяет карточкам переноситься на новую строку */
+    gap: 30px; /* Расстояние между карточками */
 }
-
-.text {
-    font-family: info;
-    max-width: 800px;  /* Ограничиваем ширину текста */
-    margin: 40px auto; /* Центрируем блок */
-    line-height: 1.6;  /* Увеличиваем межстрочный интервал */
-    max-height: 1000px;
-    font-size:larger;
-}
-
-.button {
-    background-color: Black;
-    font-family: info;
-    border: none;
-    color: white;
-    padding: 20px 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-
-.personnel {
-    max-height: 363px;
-    max-width: fit-content;
-    border-radius: 10px;
-    border-color: black;
-}
-
-.div_personnel {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;    
-}
-
-
-
-.text_info {
-    color: black;
-    font-size: 30px;
-    text-align: left;
-    font-family: info;
-}
-
 
 .container {
     position: relative;
-  }
+    width: 250px; /* Фиксированная ширина карточки */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Добавляем тень для объема */
+    border-radius: 10px;
+    overflow: hidden; /* Скрываем все, что выходит за скругленные углы */
+}
   
-  .image {
-    opacity: 1;
+.personnel.image {
     display: block;
     width: 100%;
     height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
+    transition: opacity .5s ease;
+}
   
-  .middle {
+.middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-  }
+    text-align: center;
+    width: 100%;
+}
   
-  .container:hover .image {
-    opacity: 0.3;
-  }
+.container:hover .image {
+    opacity: 0.1; /* Сильнее затемняем фото при наведении */
+}
   
-  .container:hover .middle {
+.container:hover .middle {
     opacity: 1;
-  }
-  
+}
+
+.text_info {
+    font-family: 'info', sans-serif;
+    color: #111;
+    font-size: 24px;
+    padding: 10px;
+}
+
+/* --- Секция "Туры" --- */
+.text {
+    font-family: 'info', sans-serif;
+    font-size: 20px;
+    color: #333;
+    border: 5px solid #ff4500; /* Используем фирменный оранжевый */
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 800px;
+    margin: 40px auto; /* Центрируем блок */
+    text-align: center;
+}
+
+/* Стили для элементов формы внутри блока "Туры" */
+.text input, .text select {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: black;
+    font-family: 'info', sans-serif;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff4500;
+}
