@@ -4,7 +4,7 @@
     "name": "Tristan Bond",
     "role": "Vocals",
     "years": "2023 - present",
-    "photoUrl": "assets/images/Tristan_New.jpg",
+    "photoUrl": "assets/images/Tristan.jpg",
     "bio": "",
     "gear": "None"
   },
@@ -13,7 +13,7 @@
     "name": "Francis Healy",
     "role": "Lead Guitar",
     "years": "2023 - present",
-    "photoUrl": "assets/images/Francis.jpg",
+    "photoUrl": "assets/images/Francis1.jpg",
     "bio": "",
     "gear": "Roland Cube Amp, Epiphone Flying V Ebony, Epiphone Slash Les Paul, Jackson Pro Plus Dinky DKA Metallic Black"
   },
@@ -22,14 +22,14 @@
     "name": "Savva Belavsky-Levitan",
     "role": "Drummer",
     "years": "2023 - present",
-    "photoUrl": "assets/images/Savva.JPG",
+    "photoUrl": "assets/images/Savva.jpg",
     "bio": "",
     "gear": "Vic Firth 7AN American Classic, Promark Transport Deluxe, Roland TD-8"
   },
   {
     "id": 4,
     "name": "Maks Sadlon",
-    "role": "Band Adviser",
+    "role": "Sound Engineer",
     "years": "2024 - present",
     "photoUrl": "assets/images/Maks.JPG",
     "bio": "",
@@ -40,16 +40,16 @@
     "name": "Sean Farrell",
     "role": "Rhythm Guitar",
     "years": "2025 - present",
-    "photoUrl": "assets/images/Sean.JPG",
+    "photoUrl": "assets/images/Sean.jpg",
     "bio": "",
     "gear": "Epiphone Classic Les Paul Ebony, Boss Katana"
   },
   {
     "id": 6,
-    "name": "Tobias Maximus",
+    "name": "Toby Jones",
     "role": "Bass",
     "years": "2025 - present",
-    "photoUrl": "assets/images/Tobias.jpg",
+    "photoUrl": "assets/images/Tobias (1).jpg",
     "bio": "",
     "gear": "Harley Benton MB-4 SBK Deluxe Series"
   }
