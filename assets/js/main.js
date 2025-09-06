@@ -34,7 +34,7 @@ async function includeHTML() {
 }
 
 // Запускаем нашу функцию после того, как весь HTML-документ будет загружен и готов.
-document.addEventListener('DOMContentLoaded', includeHTML);
+//document.addEventListener('DOMContentLoaded', includeHTML);//
 
 // Новая функция для отрисовки персонала из JSON-файла.
 async function renderPersonnel() {
