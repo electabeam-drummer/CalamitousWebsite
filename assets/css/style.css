@@ -3,15 +3,18 @@
     src: url(/assets/fonts/Metropolitan.ttf);
   }
 
+
 @font-face {
     font-family: info;
     src: url(/assets/fonts/Blacklisted.ttf)
 }
 
+
 @font-face {
     font-family: history;
     src: url(/assets/fonts/THEBOLDFONT-FREEVERSION.otf)
 }
+
 
 /*main style of the page*/
 body {
@@ -20,6 +23,7 @@ body {
     background-color: #1a1a1a; /*dark background for the page*/
     font-family: Arial, sens-serif;
 }
+
 
 /*this class will now work like a a white addition*/
 .main-content-wrapper {
@@ -30,6 +34,7 @@ body {
     color: #333;
 }
 
+
 .container{
     position: relative;
     width: 250px;
@@ -37,6 +42,8 @@ body {
     border-radius: 10px; /*circular corners*/
     overflow: hidden; /*hide everything coming breaching the corners*/
 }
+
+
 .logo {
     display: block;     /* Чтобы margin: auto сработал */
     width: 100%;         /* 90% от родителя (.main-content-wrapper) */
@@ -63,9 +70,11 @@ body {
     transition: opacity .5s ease;
 }
 
+
 .container:hover .image {
     opacity: 0.1; /* Изменение будет плавным */
 }
+
 
 /*the menu of pages at the top of the screen*/
 .navbar {
@@ -98,6 +107,7 @@ a.one:link, a.one:visited {
     text-decoration: none;
 }
 
+
 a.one:hover {
     background-color: #ff4500;
     padding: 10px 15px;
@@ -106,15 +116,6 @@ a.one:hover {
     text-decoration: none;
 }
 
-.personnel {
-    font-family: logo;
-    font-size: 6vw; /* Размер шрифта зависит от ширины экрана */
-    max-block-size: 72px; /* Ограничиваем максимальный размер */
-    margin-top: 60px;
-    margin-bottom: 40px;
-    display: block;
-    position: center;
-}
 
 .titles {
     font-family: logo;
@@ -129,9 +130,10 @@ a.one:hover {
 
 .div_personnel {
     display: flex;
-    justify-content: center;
+    justify-content: center; /*space-evenly; */
     flex-wrap: wrap;
-    gap: 30px; /* Расстояние между flex-элементами */
+    gap: 30px; 
+    align-items: center; 
 }
 
 
@@ -147,7 +149,8 @@ a.one:hover {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-  }
+}
+
 
 .personnel {
     max-height: 363px;
@@ -155,14 +158,6 @@ a.one:hover {
     border-radius: 10px;
     border-color: black;
 }
-
-.div_personnel {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;    
-}
-
 
 
 .text_info {
@@ -205,30 +200,35 @@ a.one:hover {
   }
 */
 
-/*this section of css focuses on creating the slideshoy for history.html*/
+/*this section of css focuses on creating the slideshow for history.html*/
 .slideshow_container {
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
+}
+
 
 .active {
     background-color: #717171
 }
+
 
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
 
+
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
 }
 
+
 @media only screen and (max-width: 300px) {
     
 }
+
 
 /* new css code fot personnel */
 
@@ -240,6 +240,7 @@ a.one:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+
 .personnel-card img.personnel {
     display: block;
     width: 100%;
@@ -247,9 +248,11 @@ a.one:hover {
     transition: transform 0.3s ease;
 }
 
+
 .personnel-card:hover img.personnel {
     transform: scale(1.1); /* Эффект приближения при наведении */
 }
+
 
 .personnel-info {
     position: absolute;
@@ -263,12 +266,59 @@ a.one:hover {
     font-family: info, sans-serif;
 }
 
+
 .personnel-info h3 {
     margin: 0 0 5px 0;
     font-size: 1.5em;
 }
 
+
 .personnel-info p {
     margin: 0;
     font-size: 1em;
+}
+
+
+/* --- Футер (Подвал сайта) --- */
+.site-footer {
+    background-color: #000000; /* Черный фон, как у навбара */
+    color: #a0a0a0; /* Светло-серый цвет текста */
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between; /* Расталкиваем элементы по краям */
+    align-items: center; /* Центрируем по вертикали */
+}
+
+
+.copyright-text {
+    margin: 0;
+}
+
+
+.social-links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Убираем маркеры списка */
+    display: flex; /* Выстраиваем ссылки в ряд */
+    gap: 20px; /* Расстояние между ссылками */
+}
+
+
+.social-links a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+.social-links a:hover {
+    color: #ff4500; /* Фирменный оранжевый при наведении */
 }
