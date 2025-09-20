@@ -15,11 +15,11 @@
     src: url(/assets/fonts/THEBOLDFONT-FREEVERSION.otf)
 }
 
-header {
+/*header {
     position: sticky;
     top: 0;
     z-index: 1000;
-}
+}*/
 
 /*main style of the page*/
 body {
@@ -207,7 +207,7 @@ a.one:hover {
 
 .personnel-card {
     position: relative; /* Необходимо для эффекта при наведении */
-    width: 300px; /* Ограничим ширину карточки */
+    width: auto; /* Ограничим ширину карточки */
     border-radius: 10px;
     overflow: hidden; /* Скроет все, что выходит за скругленные углы */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
